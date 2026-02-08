@@ -1,0 +1,164 @@
+/* =====================================================
+   GLOBAL RESET (SAFE)
+===================================================== */
+* {
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   BACKGROUND (ANIMATED ATM SCREEN)
+===================================================== */
+.stApp {
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c92d2);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    font-family: "Segoe UI", sans-serif;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* =====================================================
+   MAIN ATM CARD (NO OPACITY BUG)
+===================================================== */
+.block-container {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0px 0px 35px rgba(0, 255, 213, 0.45);
+}
+
+/* =====================================================
+   FORCE TITLE & HEADERS (CRITICAL FIX)
+===================================================== */
+h1, h2, h3 {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+[data-testid="stTitle"] h1 {
+    color: #00ffd5 !important;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(0, 255, 213, 0.8);
+}
+
+[data-testid="stHeader"] h2 {
+    color: #ffffff !important;
+    text-align: center;
+}
+
+[data-testid="stSubheader"] h3 {
+    color: #b2fff5 !important;
+    text-align: center;
+}
+
+/* =====================================================
+   LABELS
+===================================================== */
+label {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* =====================================================
+   INPUTS (GLOW ON FOCUS)
+===================================================== */
+input, textarea {
+    border-radius: 14px !important;
+    border: 2px solid #00ffd5 !important;
+    padding: 12px !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 15px #00ffd5;
+    transform: scale(1.03);
+}
+
+/* =====================================================
+   SELECTBOX
+===================================================== */
+div[data-baseweb="select"] {
+    border-radius: 14px;
+    border: 2px solid #00ffd5;
+    background-color: #ffffff;
+}
+
+/* =====================================================
+   BUTTONS (ATM STYLE)
+===================================================== */
+.stButton > button {
+    width: 100%;
+    background: linear-gradient(90deg, #00ffd5, #00c9ff);
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 14px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(90deg, #00c9ff, #00ffd5);
+    transform: translateY(-4px) scale(1.06);
+    box-shadow: 0px 0px 28px #00ffd5;
+}
+
+/* =====================================================
+   BALANCE DISPLAY
+===================================================== */
+.balance-box {
+    background: rgba(0, 255, 213, 0.18);
+    border: 2px dashed #00ffd5;
+    border-radius: 18px;
+    padding: 22px;
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px #00ffd5; }
+    50% { box-shadow: 0 0 25px #00ffd5; }
+    100% { box-shadow: 0 0 10px #00ffd5; }
+}
+
+/* =====================================================
+   SUCCESS / ERROR
+===================================================== */
+.stSuccess {
+    background: linear-gradient(90deg, #2e7d32, #66bb6a);
+    color: white;
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.stError {
+    background: linear-gradient(90deg, #b71c1c, #ef5350);
+    color: white;
+    border-radius: 14px;
+    padding: 14px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.atm-footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #00ffd5;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
