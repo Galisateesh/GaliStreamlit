@@ -5,7 +5,7 @@ import sqlite3
 file_path="gali.css"
 with open(file_path) as p:
     st.html(f"<style>{p.read()}</style>")
-st.title("Welcome To Kadapa ATM")
+st.title("Welcome To Kadapa ATM Gali Sateesh")
 conn=sqlite3.connect("gali.db",check_same_thread=False)
 cur=conn.cursor()
 cur.execute("""
@@ -94,6 +94,7 @@ if choice=="Other[balance cheking,deposit,withdraw]":
         
 
     
+
 
 
 
