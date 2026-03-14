@@ -30,7 +30,6 @@ if c=="two":
     d=st.selectbox("",["select","YES","NO"])
     st.markdown("B")
     st.markdown("F")
-    st.markdown("H")
     st.markdown("I")
     st.markdown("J")
     if d=="YES":
@@ -43,6 +42,7 @@ if c=="three":
     st.markdown("C")
     st.markdown("F")
     st.markdown("G")
+    st.markdown("H")
     st.markdown("I")
     st.markdown("J")
     if d=="Yes":
