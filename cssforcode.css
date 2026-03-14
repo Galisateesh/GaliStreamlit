@@ -1,0 +1,59 @@
+/* Page background */
+body {
+    background-color: #f5f7fb;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: #1f2937;
+}
+
+/* Sidebar selectbox */
+section[data-testid="stSidebar"] .stSelectbox div {
+    background-color: #374151;
+    color: white;
+}
+
+/* Main selectbox */
+div[data-baseweb="select"] > div {
+    border-radius: 8px;
+    border: 2px solid #3b82f6;
+}
+
+/* Button style */
+button[kind="secondary"] {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+/* Button hover */
+button[kind="secondary"]:hover {
+    background-color: #2563eb;
+}
+
+/* Header styling */
+h1, h2, h3 {
+    color: #1e3a8a;
+    text-align: center;
+}
+
+/* Markdown text */
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Success message */
+div[data-testid="stAlert"] {
+    border-radius: 10px;
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+/* Cards style effect */
+.block-container {
+    padding-top: 2rem;
+}
