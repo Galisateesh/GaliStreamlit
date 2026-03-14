@@ -15,7 +15,7 @@ if st.button("ok"):
         st.header("Please Select Atleast one Section")
 c=st.sidebar.selectbox("",["select section","one","two","three","four"])
 if c=="one":
-    d=st.selectbox("",["select","Yes","No"])
+    d=st.selectbox("Section one",["select","Yes","No"])
     st.markdown("A")
     st.markdown("E")
     st.markdown("F")
@@ -27,7 +27,7 @@ if c=="one":
     elif d=="No":
         st.success("Done,Go Another Section")
 if c=="two":
-    d=st.selectbox("",["select","YES","NO"])
+    d=st.selectbox("Section two",["select","YES","NO"])
     st.markdown("B")
     st.markdown("F")
     st.markdown("I")
@@ -38,7 +38,7 @@ if c=="two":
     elif d=="NO":
         st.success("Done,Go Another Section")
 if c=="three":
-    d=st.selectbox("",["select","Yes","No"])
+    d=st.selectbox("Section three",["select","Yes","No"])
     st.markdown("C")
     st.markdown("F")
     st.markdown("G")
@@ -51,7 +51,7 @@ if c=="three":
     elif d=="No":
         st.success("Done,Go Another Section")
 if c=="four":
-    d=st.selectbox("",["select","YES","NO"])
+    d=st.selectbox("Section four",["select","YES","NO"])
     st.markdown(" D")
     st.markdown("E")
     st.markdown("G")
