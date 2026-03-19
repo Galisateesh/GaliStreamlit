@@ -1,0 +1,68 @@
+/* Background */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* Border */
+    border: 8px solid #151414;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Input box */
+.stNumberInput input {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ffcc00;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #ffcc00;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+.stButton > button:hover {
+    background-color: #ffaa00;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Success message */
+.stSuccess {
+    background-color: #28a745 !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Warning message */
+.stWarning {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Center everything */
+.block-container {
+    text-align: center;
+}
