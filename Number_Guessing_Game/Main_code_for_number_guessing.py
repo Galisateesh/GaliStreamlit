@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 st.title("🎯Guess The Number 🎮 !!! 🔢")
-file_path="Number.css"
+file_path="Number_Guessing_Game/Number.css"
 with open(file_path) as p:
     st.html(f"<style>{p.read()}</style>")
 if "a" not in st.session_state:
