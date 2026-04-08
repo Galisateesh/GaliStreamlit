@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-st.title("🎯Deeksha uess the Number 🎮 !!! 🔢")
+st.title("🎯Deeksha Guess the Number 🎮 !!! 🔢")
 file_path="Number_Guessing_Game/Number.css"
 with open(file_path) as p:
     st.html(f"<style>{p.read()}</style>")
