@@ -3,7 +3,7 @@ import numpy as np
 if "a" not in st.session_state:
     st.session_state.a=np.random.randint(1,100)
     st.session_state.c=0
-st.title(f"🎯Deeksha Guess the Number 🎮 !{st.markdown(f"<h4>{st.session_state.a}</h4>", unsafe_allow_html=True}!! 🔢")
+st.title(f"🎯Deeksha Guess the Number 🎮 !!! 🔢")
 file_path="Number_Guessing_Game/Number.css"
 with open(file_path) as p:
     st.html(f"<style>{p.read()}</style>")
