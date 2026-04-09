@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-st.markdown("<h4>{st.session_state.a}</h4>", unsafe_allow_html=True)
+st.markdown(f"<h4>{st.session_state.a}</h4>", unsafe_allow_html=True)
 st.title("🎯Deeksha Guess the Number 🎮 !!! 🔢")
 file_path="Number_Guessing_Game/Number.css"
 with open(file_path) as p:
