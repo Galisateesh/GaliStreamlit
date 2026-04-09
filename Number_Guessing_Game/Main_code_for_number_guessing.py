@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+st.write(st.session_state.a)
 st.title("🎯Deeksha Guess the Number 🎮 !!! 🔢")
 file_path="Number_Guessing_Game/Number.css"
 with open(file_path) as p:
@@ -7,7 +8,6 @@ with open(file_path) as p:
 if "a" not in st.session_state:
     st.session_state.a=np.random.randint(1,100)
     st.session_state.c=0
-st.write(st.session_state.a)
 b=st.number_input("",placeholder="Enter your Guess 🎯",value=None,step=1)
 if st.button("Submit"):
     st.session_state.c+=1
